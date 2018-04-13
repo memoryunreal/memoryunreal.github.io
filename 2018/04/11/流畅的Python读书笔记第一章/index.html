@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index,sorted等用法。">
+<meta name="description" content="本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index, sorted等方法的用法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="流畅的Python读书笔记 - 1.1">
 <meta property="og:url" content="http://yoursite.com/2018/04/11/流畅的Python读书笔记第一章/index.html">
 <meta property="og:site_name" content="li zhe&#39;s Blog">
-<meta property="og:description" content="本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index,sorted等用法。">
+<meta property="og:description" content="本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index, sorted等方法的用法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-13T02:03:36.990Z">
+<meta property="og:updated_time" content="2018-04-13T02:12:23.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流畅的Python读书笔记 - 1.1">
-<meta name="twitter:description" content="本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index,sorted等用法。">
+<meta name="twitter:description" content="本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index, sorted等方法的用法。">
 
 
 
@@ -339,7 +339,7 @@
       
 
       
-        <p>本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index,sorted等用法。<br><a id="more"></a><br>第一次尝试写自己的博客，最近在读一本名叫《流畅的Python》的书籍，博主正在准备申请去日本早稻田大学的3+2项目，想要研究人工智能方向，所以现在正在学习python。希望可以和大家分享自己的学习过程以及一些有用的经验。</p>
+        <p><center>本文主要讲解如何创建一摞纸牌，并对该摞纸牌进行相应的排序等操作，简单介绍了dic，index, sorted等方法的用法。</center><br><a id="more"></a><br>第一次尝试写自己的博客，最近在读一本名叫《流畅的Python》的书籍，博主正在准备申请去日本早稻田大学的3+2项目，想要研究人工智能方向，所以现在正在学习python。希望可以和大家分享自己的学习过程以及一些有用的经验。</p>
 <p><font size="5">第一章 Python数据模型</font><br>刚开始作者介绍了python和java等语言在写法上的不同，比如关于collection字符串的长度：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java：  collection.len()</span><br><span class="line">python: len(collection)</span><br></pre></td></tr></table></figure></p>
 <p>python风格这种设计思想完全体现在Python的数据模型上，数据模型其实是对Python框架的描述，它规范了Python构建模块的接口。Python解释器碰到特殊的句法时，会用特殊方法去激活一些基本的对象操作，这些特殊的句法通常以两个下划线开头，以两个下划线结尾.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__getitem__</span><br></pre></td></tr></table></figure></p>
 <p><font size="4">1.1 一摞Python风格的纸牌</font><br>接下来我们跟着书上的例子来建立一个纸牌类，这里我们需要用到collectino.namedtuple构建一个简单的类来表示一张纸牌，关于namedtuple的介绍，官方链接<a href="https://docs.python.org/2/library/collections.html" target="_blank" rel="noopener">namedtuple</a></p>
