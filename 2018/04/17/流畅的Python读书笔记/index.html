@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="li zhe&#39;s Blog">
 <meta property="og:description" content="特殊方法的存在是为了Python解释器调用的，你自己并不需要去调用他们，比如说my_object.len()这种写法是没有的，应该使用len(my_object)。在使用len(my_object)的时候，如果my_object是一个自定义类的对象，那么Python会自己去调用其中你实现的len方法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-17T10:00:20.768Z">
+<meta property="og:updated_time" content="2018-04-17T10:02:00.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流畅的Python读书笔记 -1.2">
 <meta name="twitter:description" content="特殊方法的存在是为了Python解释器调用的，你自己并不需要去调用他们，比如说my_object.len()这种写法是没有的，应该使用len(my_object)。在使用len(my_object)的时候，如果my_object是一个自定义类的对象，那么Python会自己去调用其中你实现的len方法。">
@@ -343,7 +343,7 @@
 <p>很多时候，特殊方法的调用是隐式的，比如for i in x:这个语句，背后其实用的是iter(x),而这个函数的背后则是x.<strong>iter</strong>()方法，当然前提是这个方法在x中被实现了。</p>
 <p>通常除非有大量元编程存在，否则直接调用特殊方法的频率会远低于去实现他们的次数。唯一的例外可能是<strong>init</strong>方法，目的是在你自己的字类的<strong>init</strong>方法中调用超类的构造器。通过内置的函数（例如len、str、iter等等）来使用特殊方法是最好的选择。这些内置函数不仅会调用特殊方法，而且对于内置类来说，他们速度更快。</p>
 <p><font size="4">1.2.1 模拟数值类型</font><br>利用特殊方法，可以让自定义对象通过加号“+”（或是别的运算符）进行运算。</p>
-<p>我们首先实现一个二维向量（vector）类<br>！[vector][<br><a href="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/2018-04-17-vector.png]" target="_blank" rel="noopener">https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/2018-04-17-vector.png]</a></p>
+<p>我们首先实现一个二维向量（vector）类<br>！[vector][<br><a href="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/2018-04-17-vector.png" target="_blank" rel="noopener">https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/2018-04-17-vector.png</a> ]</p>
 
       
     </div>
