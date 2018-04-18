@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="本节主要介绍了Python语言中的一些特殊方法">
+<meta name="description" content="1.3~1.6内容较少，大概是一些常用的特殊方法以及一些总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="流畅的Python读书笔记 1-3">
+<meta property="og:title" content="流畅的Python读书笔记 1.3~1.6">
 <meta property="og:url" content="http://yoursite.com/2018/04/18/流畅的Python读书笔记 -1.3/index.html">
 <meta property="og:site_name" content="li zhe&#39;s Blog">
-<meta property="og:description" content="本节主要介绍了Python语言中的一些特殊方法">
+<meta property="og:description" content="1.3~1.6内容较少，大概是一些常用的特殊方法以及一些总结">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/1.3/list%201-1.png">
 <meta property="og:image" content="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/2018-04-18-list1-2.png">
-<meta property="og:updated_time" content="2018-04-18T09:58:45.219Z">
+<meta property="og:updated_time" content="2018-04-18T12:39:12.815Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="流畅的Python读书笔记 1-3">
-<meta name="twitter:description" content="本节主要介绍了Python语言中的一些特殊方法">
+<meta name="twitter:title" content="流畅的Python读书笔记 1.3~1.6">
+<meta name="twitter:description" content="1.3~1.6内容较少，大概是一些常用的特殊方法以及一些总结">
 <meta name="twitter:image" content="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/1.3/list%201-1.png">
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>流畅的Python读书笔记 1-3 | li zhe's Blog</title>
+  <title>流畅的Python读书笔记 1.3~1.6 | li zhe's Blog</title>
   
 
 
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">流畅的Python读书笔记 1-3</h1>
+          <h1 class="post-title" itemprop="name headline">流畅的Python读书笔记 1.3~1.6</h1>
         
 
         <div class="post-meta">
@@ -342,10 +342,15 @@
       
 
       
-        <p><center>本节主要介绍了Python语言中的一些特殊方法</center><br><a id="more"></a></p>
+        <p><center>1.3~1.6内容较少，大概是一些常用的特殊方法以及一些总结</center><br><a id="more"></a></p>
 <h2 id="1-3-特殊方法一览"><a href="#1-3-特殊方法一览" class="headerlink" title="1.3 特殊方法一览"></a>1.3 特殊方法一览</h2><p>Python语言参考手册中的“<a href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener">Data Model</a>”一章列出了83个特殊方法的名字，其中47个用于实现算术运算、位运算和比较操作。</p>
 <p>以下两张表没有完全按照官方文档分组<br><img src="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/1.3/list%201-1.png" alt="表1-1"></p>
 <p><img src="https://memoryunrealblog.oss-cn-qingdao.aliyuncs.com/2018-04-18-list1-2.png" alt="表1-2"></p>
+<h2 id="1-4-为什么len不是普通方法"><a href="#1-4-为什么len不是普通方法" class="headerlink" title="1.4 为什么len不是普通方法"></a>1.4 为什么len不是普通方法</h2><p>之前1.2节中提到，如果x是一个内置类型的实例，那么len(x)的速度会非常快，原因是CPython会直接从一个C结构体里读取对象的长度，完全不会调用任何方法。</p>
+<h2 id="1-5-本章小结"><a href="#1-5-本章小结" class="headerlink" title="1.5 本章小结"></a>1.5 本章小结</h2><p>通过实现特殊方法，自定义数据类型可以表现得跟内置类型一样，从而让我们写出更具表达力的代码–或者说，更具Python风格的代码。</p>
+<p>Python对象的一个基本要求就是他得有合理的字符串表示形态，我们可以通过<strong>repr</strong>和<strong>str</strong>来满足这个要求。</p>
+<p>Python通过运算符重载这一模式提供了丰富的数值类型，除了内置的那些之外，还有decimal.Decimal和fractions.Fraction。这些数据类型都支持中缀算术运算符。</p>
+<h2 id="1-6-延伸阅读"><a href="#1-6-延伸阅读" class="headerlink" title="1.6 延伸阅读"></a>1.6 延伸阅读</h2><p>对本章内容和本书主题来说，Python语言参考手册里的”<a href="https://docs.python.org/3/reference/datamodel.html" target="_blank" rel="noopener">Data Model</a>“一章是最符合规范的知识来源。另外再推荐三本书：Alex Martelli的《Python技术手册（第2版）》，David Beazley的《Python参考手册（第4版》和与Brian K.jones合著的《Python Cookbook（第3版）中文版》</p>
 
       
     </div>
@@ -579,7 +584,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-特殊方法一览"><span class="nav-number">1.</span> <span class="nav-text">1.3 特殊方法一览</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-特殊方法一览"><span class="nav-number">1.</span> <span class="nav-text">1.3 特殊方法一览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-为什么len不是普通方法"><span class="nav-number">2.</span> <span class="nav-text">1.4 为什么len不是普通方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-本章小结"><span class="nav-number">3.</span> <span class="nav-text">1.5 本章小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-延伸阅读"><span class="nav-number">4.</span> <span class="nav-text">1.6 延伸阅读</span></a></li></ol></div>
             
 
           </div>
